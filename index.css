@@ -2,31 +2,87 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-    background-color: cadetblue;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.container { 
+    margin: 10px;
 }
-.box {
-    height: 250px;
-    width: 20%;
-    font-size: 60px;
+.container > p:first-child {
+    /* background-color: aquamarine; */
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 5px;
     font-weight: bold;
-    border: 2px solid black;
+}
+.subContainer {
     display: flex;
-    justify-content: center;
+    background-color: darksalmon;
+    min-height: 180px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+.subContainer p {
+    /* background-color: blue; */
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.subContainer p:first-child {
+    background-color: cornflowerblue;
+}
+.subContainer p:last-child {
+    background-color: darkorange;
+}
+.subContainer p:nth-child(2) {
+    background-color: crimson;
+}
+
+.usingJustifyConCen {
+   justify-content: center;
+   align-items: center;
+}
+.usingJustifyConEnd {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.usingJustifyConStart {
+    justify-content:start;
+    align-items: flex-start;
+}
+.usingJustifyConSpaceBetween {
+    justify-content: space-between;
     align-items: center;
 }
-.box1 {
-    background-color: slateblue;
+.usingJustifyConSpaceEvenly {
+    justify-content: space-evenly;
+    align-items: center;
 }
-.box2 {
-    background-color:orange;
+.usingJustifyConSpaceAround {
+    justify-content: space-around;
+    align-items: center;
 }
-.box3 {
-    background-color:mediumvioletred;
+.usingJustifyConBaseLine {
+    justify-content: baseline;
+    align-items: baseline;
+}
+.usingSpaceDivs {
+    justify-content:center;
+    align-items:center;
+    gap: 15px;
+}
+.usingFlexDirRowReve {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.usingFlexDirCol {
+    flex-direction: column;
+}
+.usingFlexDirColJustifyCen {
+    flex-direction: column;
+    align-items: center;
 }
